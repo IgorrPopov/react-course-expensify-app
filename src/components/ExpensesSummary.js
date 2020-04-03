@@ -9,13 +9,13 @@ export const ExpensesSummary = (props) => (
     <div>
         {
             props.expensesCount ?
-            <p>{
+            <h1>{
                 `Viewing ${
                     props.expensesCount
                 } expenses totalling ${
                     numeral(props.expensesTotal / 100).format('$0,0.00')
                 }`
-            }</p> : ''
+            }</h1> : ''
         }
     </div>
 );

@@ -69,7 +69,7 @@ const mapStateToProps = (state) => {
     };
 };
 
-const mapDispatchToProps = () => ({
+const mapDispatchToProps = (dispatch) => ({
     setTextFilter: (text) => dispatch(setTextFilter(text)),
     sortByDate: () => dispatch(sortByAmount()),
     sortByAmount: () => dispatch(sortByAmount()),
